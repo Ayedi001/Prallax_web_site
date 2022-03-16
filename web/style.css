@@ -1,0 +1,85 @@
+body, html{
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+    color: #667;
+}
+.ping1,.ping2,.ping3{
+    position: relative;
+    opacity:0.7 ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+/*
+fixed=parallax
+scroll=normal
+*/
+
+.ping1{
+    background-image: url(./c1.jpg);
+    min-height: 100%;
+}
+.ping2{
+    background-image: url(./c3.jpg);
+    min-height: 50%;
+}
+.ping3{
+    background-image: url(./c5.jpg);
+    min-height: 50%
+}
+.section{
+   
+    padding: 4em 6em;
+    text-align: center;
+}
+.section-light{
+    background-color: rgb(255,255,200)
+}
+.section-dark{
+    background-color: rgb(73, 73, 73);
+}
+.ptext{
+    position: absolute;
+    color:rgb(194, 175, 90);
+    top:     50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 28px;
+    text-transform: uppercase;
+
+}
+.ptexy{
+    position: absolute;
+    color: rgb(55, 81, 104);
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+.border{
+    background-color: #111;
+    padding: 10px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h2 .section-dark{
+    color: aliceblue;
+}
+@media(max-width:568px){
+    .ping1,.ping2,.ping3{
+        background-attachment: scroll;
+    }
+}
